@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>pavtBoard</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/jquery.shCircleLoader.css" />
+	<link rel="stylesheet" href="css/pavtBoard.css" />
+	<style>
+		.section {
+			text-align: center;
+			color: #fff;
+		}
+	</style>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.shCircleLoader-min.js"></script>
+	
+</head>
+
+<body>
+	<div id="loader"></div>
+	<script type="text/javascript">
+		$('#loader').shCircleLoader({ color: "#00deff" });
+	</script>
+	<div id="dowebok" class="fr">
+		<div class="section animsition">
+			<!-- 数据面板部分 start -->
+			<div class="slide" id="myMap">
+				<!-- header start -->
+				<div class="header">
+					<h3 href="#">创意声光电数据面板</h3>
+					<div class="topTime">时间加载中...</div>
+				</div>
+				<!-- header end -->
+				<!-- main start -->
+				<div class="wrapper main clearfix">
+					<div class="left full-h bg-red">
+
+					</div>
+					<div class="center full-h bg-blue">
+
+					</div>
+					<div class="right full-h bg-green">
+
+					</div>
+				</div>
+				<!-- main end -->
+			</div>
+			<!-- 数据面板部分 end -->
+			<div class="slide">
+				<h3>第二屏</h3>
+			</div>
+			<div class="slide">
+				<h3>第三屏</h3>
+			</div>
+		</div>
+		<canvas id="canvas" style="position: absolute;top: 0;left: 0;"></canvas>
+	</div>
+
+	
+	
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.animsition.js"></script>
+	<script src="./maps-v=1.4.3&key=f8ffe058b8e6f5b05e8ff43ca4207393"></script>
+	<!-- 宇宙黑洞背景  -->
+	<script src="js/bg.js"></script>
+	<script src="js/pavtBoard.js"></script>
+	<script>
+		$(function () {
+			$('#dowebok').fullpage({
+				loopHorizontal: false,
+				scrollOverflow: true
+			});
+		});
+		
+	</script>
+</body>
+
+</html>
